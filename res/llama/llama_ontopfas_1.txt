@@ -1,0 +1,46 @@
+11/22
+ontopfas:Pfas rdfs:comment "Classe radice della gerarchia PFAS. Include tutte le sostanze per- e polifluoroalchiliche, caratterizzate da legami carbonio-fluoro estremamente stabili." .
+
+ontopfas:Pfaa rdfs:comment "Sottoclasse di Pfas. Gli acidi perfluoroalchilici sono i prodotti finali della degradazione ambientale di molti precursori PFAS." .
+
+ontopfas:Pfca rdfs:comment "Sottoclasse di Pfaa. Comprende composti come PFOA. La lunghezza della catena carboniosa ne determina la classificazione in corta, lunga o ultracorta." .
+
+ontopfas:Pfsa rdfs:comment "Sottoclasse di Pfaa. Comprende composti come PFOS. Tendenzialmente più persistenti e bioaccumulabili rispetto alle PFCA di pari lunghezza." .
+
+ontopfas:Pfoa rdfs:comment "Istanza rappresentativa delle PFCA a catena lunga. Classificata come possibile cancerogeno per l'uomo (IARC Gruppo 2B) e soggetta a restrizioni globali." .
+
+ontopfas:Pfos rdfs:comment "Istanza rappresentativa delle PFSA a catena lunga. Inclusa nella Convenzione di Stoccolma come inquinante organico persistente (POP)." .
+
+ontopfas:PfasPrecursor rdfs:comment "I precursori non sono PFAAs ma possono trasformarsi in esse tramite biotrasformazione o degradazione abiotica nell'ambiente o negli organismi viventi." .
+
+ontopfas:LongChainPfas rdfs:comment "Le catene lunghe mostrano maggiore bioaccumulazione e persistenza ambientale rispetto alle catene corte, per questo sono soggette a maggiori restrizioni normative." .
+
+ontopfas:ShortChainPfas rdfs:comment "Sviluppate come alternative alle catene lunghe, ma presentano maggiore mobilità ambientale e idrosolubilità, rendendo difficile la loro rimozione dalle acque." .
+
+ontopfas:UltraShortChainPfas rdfs:comment "Le catene ultracorte (≤3 atomi di carbonio) sono le più mobili e difficili da rimuovere con i trattamenti convenzionali delle acque." .
+
+ontopfas:PolymerPfas rdfs:comment "I polimeri PFAS sono generalmente considerati a rischio inferiore rispetto ai non-polimeri, ma possono degradarsi rilasciando monomeri o PFAA." .
+
+ontopfas:NonPolymerPfas rdfs:comment "I non-polimeri PFAS comprendono la maggior parte delle sostanze di preoccupazione normativa, incluse PFOA, PFOS e i loro precursori." .
+
+ontopfas:FunctionalGroup rdfs:comment "Il gruppo funzionale determina le proprietà chimiche e la classificazione del PFAS (es. acido carbossilico → PFCA, acido sulfonico → PFSA)." .
+
+ontopfas:PfasMobility rdfs:comment "La mobilità dipende dalla lunghezza della catena, dal gruppo funzionale e dalla matrice ambientale (acqua, aria, suolo). È un fattore chiave per la valutazione del rischio." .
+
+ontopfas:VulnerablePerson rdfs:comment "Include neonati, bambini, donne in gravidanza e individui con patologie preesistenti, per i quali i limiti di esposizione raccomandati sono generalmente più bassi." .
+
+<https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title> rdfs:comment "Proprietà utilizzata per assegnare un titolo leggibile a dataset e risorse catalogate nell'ontologia." .
+
+ontopfas:concernLevel rdfs:comment "I valori attesi sono 'low', 'medium', 'high'. Dipende da fattori quali persistenza, bioaccumulazione, tossicità e mobilità ambientale." .
+
+ontopfas:numberOfCarbons rdfs:comment "Proprietà numerica intera. Valore discriminante per la classificazione in catena ultracorta (≤3), corta o lunga." .
+
+ontopfas:isHydrophilic rdfs:comment "Proprietà booleana. I PFAS idrofili tendono a concentrarsi nelle acque superficiali e sotterranee, aumentando il rischio di esposizione tramite acqua potabile." .
+
+ontopfas:isEther rdfs:comment "Proprietà booleana. I PFAS eterei (es. GenX) sono stati introdotti come sostituti di PFOA ma mostrano anch'essi preoccupanti profili di persistenza." .
+
+ontopfas:limit rdfs:comment "Valore numerico espresso nell'unità indicata da ontopfas:unit. Da associare alla normativa di riferimento tramite ontopfas:restricts." .
+
+ontopfas:precision rdfs:comment "Operatore di confronto associato al valore misurato o limite. Valori tipici: '<', '>', '≤', '≥', '='." .
+
+<urn:absolute:ontopfas#Presumptive> rdfs:comment "Indica un'osservazione basata su evidenze indirette o metodi analitici non definitivi. Richiede conferma tramite analisi targeted." .

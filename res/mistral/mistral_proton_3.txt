@@ -1,0 +1,52 @@
+24/26
+:Event rdfs:comment "An occurrence that happens at a specific time and place."@en .
+
+:GeneralTerm rdfs:comment "A generic concept, term, or word category used within the ontology knowledge base."@en .
+
+:Number rdfs:comment "A mathematical value used for counting, measuring, or quantifying data."@en .
+
+:TimeInterval rdfs:comment "A specific, bounded span or duration of time."@en .
+
+:controls rdfs:comment "Relates a controlling agent to the entity or organization that it regulates or commands."@en .
+
+:derivedFromSource rdfs:comment "Indicates the original source or reference from which the information resource was obtained."@en .
+
+:documentAbstract rdfs:comment "The abstract text specifically associated with a document."@en .
+
+:documentAuthor rdfs:comment "The agent who created or authored the document."@en .
+
+:documentSubTitle rdfs:comment "A secondary or explanatory title of a document."@en .
+
+:doingBusinessAs rdfs:comment "The trade name or commercial alias under which an organization operates."@en .
+
+:establishedIn rdfs:comment "The location or place where an organization was founded or established."@en .
+
+:establishmentDate rdfs:comment "The calendar date on which an organization was formally founded."@en .
+
+:firstName rdfs:comment "The given name of a person."@en .
+
+:givenName rdfs:comment "The primary name given to a person, distinct from their family name."@en .
+
+:hasChild rdfs:comment "Relates a person to their child."@en .
+
+:hasContactInfo rdfs:comment "Associates an object with its relevant contact information details."@en .
+
+:hasDate rdfs:comment "Associates an information resource with a specific calendar date."@en .
+
+:hasEmployee rdfs:comment "Relates an organization to an individual person who works for it."@en .
+
+:hasLeader rdfs:comment "Identifies the head, director, or leading person of an organization or group."@en .
+
+:hasOldName rdfs:comment "Specifies a previous or historical name used by an entity."@en .
+
+:hasParticipant rdfs:comment "Relates a happening or event to an agent participating in it."@en .
+
+:hasPosition rdfs:comment "Relates a person to the professional or organizational job position they hold."@en .
+
+:hasSibling rdfs:comment "Relates a person to their brother or sister."@en .
+
+:hasSocialPosition rdfs:comment "Associates a person with a specific social rank or status position."@en .
+
+:hasSpouse rdfs:comment "Relates a person to their husband, wife, or legal partner."@en .
+
+:hasSubject rdfs:comment "Relates an information resource to the primary topic it addresses."@en .

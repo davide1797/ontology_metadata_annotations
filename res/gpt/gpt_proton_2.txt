@@ -1,0 +1,50 @@
+24/24
+:Abstract rdfs:comment "Abstract entity representing concepts, ideas, or non-physical objects." .
+
+:Agent rdfs:comment "Entity capable of acting, making decisions, or participating in activities." .
+
+:ContactInformation rdfs:comment "Information used to contact or communicate with an entity." .
+
+:Document rdfs:comment "Information resource intended for recording, communicating, or preserving information." .
+
+:Entity rdfs:comment "Most general class representing any identifiable thing or concept." .
+
+:Event rdfs:comment "Occurrence or happening that takes place in time and may involve participants." .
+
+:GeneralTerm rdfs:comment "Abstract concept representing a general notion or category." .
+
+:Group rdfs:comment "Collection of agents considered as a single social or organizational unit." .
+
+:Happening rdfs:comment "Entity representing an occurrence, process, event, or situation unfolding in time." .
+
+:InformationResource rdfs:comment "Resource whose primary purpose is to convey, store, or provide information." .
+
+:JobPosition rdfs:comment "Organizational or social role held by a person within an organization." .
+
+:Language rdfs:comment "Natural or formal language used for communication or information representation." .
+
+:Location rdfs:comment "Spatial entity representing a place, area, or geographic position." .
+
+:Number rdfs:comment "Abstract representation of a numerical value or quantity." .
+
+:Object rdfs:comment "Physical, conceptual, or informational entity that can participate in relations." .
+
+:Organization rdfs:comment "Structured group of agents formed to pursue common objectives." .
+
+:Person rdfs:comment "Human individual acting as a social, organizational, or legal agent." .
+
+:ProductModel rdfs:comment "Specification or model describing a product and its characteristics." .
+
+:Role rdfs:comment "Function or responsibility assumed by an entity within a situation." .
+
+:Service rdfs:comment "Intangible offering provided by an agent to fulfill a need or function." .
+
+:Situation rdfs:comment "State of affairs, context, or circumstance involving entities and relations." .
+
+:SocialPosition rdfs:comment "Role or status occupied by a person within a social structure." .
+
+:Statement rdfs:comment "Declarative information object expressing a fact, claim, or assertion." .
+
+:TimeInterval rdfs:comment "Temporal extent defined by a start and end point in time." .
+
+:Topic rdfs:comment "Subject matter or theme addressed by an information resource." .

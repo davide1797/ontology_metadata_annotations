@@ -1,0 +1,82 @@
+40/40
+obo:CHEBI_172406 rdfs:comment "PFAS compound characterized by polyfluorinated alkyl chains." .
+
+obo:CHEBI_24431 rdfs:comment "Chemical substance or molecular entity." .
+
+obo:CHEBI_24531 rdfs:comment "PFAS compound containing a fully fluorinated alkyl chain." .
+
+obo:CHEBI_83814 rdfs:comment "PFAS precursor produced through telomerization processes and commonly used in industrial and consumer applications." .
+
+obo:ENVO_01000408 rdfs:comment "Environmental zone defined by environmental components, processes, or influences." .
+
+obo:ExO_0000003 rdfs:comment "Outcome resulting from an exposure event." .
+
+obo:ExO_0000022 rdfs:comment "Agent, event, or substance that acts as the stimulus in an exposure scenario." .
+
+obo:ExO_0000043 rdfs:comment "Phenotypic characteristic related to the anatomical structure of an organism." .
+
+obo:ExO_0000076 rdfs:comment "Exposure outcome describing the amount of a substance received by an organism." .
+
+obo:ExO_0000077 rdfs:comment "Biological response arising from exposure or other influencing factors." .
+
+obo:ExO_0000079 rdfs:comment "Biological response corresponding to a disease condition." .
+
+obo:ExO_0000080 rdfs:comment "Biological response corresponding to a symptom experienced by an organism." .
+
+obo:ExO_0000087 rdfs:comment "Exposure outcome related to actions or interventions affecting exposure." .
+
+obo:ExO_0000101 rdfs:comment "Observable phenotype resulting from biological or environmental factors." .
+
+obo:PCO_0000031 rdfs:comment "Biological entity corresponding to a whole organism or organism-level structure." .
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdfs:comment "Entity having a spatial location or geographical extent." .
+
+dcat:Dataset rdfs:comment "Collection of data published or curated by a single source and made available for access." .
+
+sosa:Observation rdfs:comment "Measurement or observation activity producing information about a property of interest." .
+
+schema:City rdfs:comment "Administrative urban area representing a city or town." .
+
+schema:Continent rdfs:comment "Large geographical landmass containing multiple countries and regions." .
+
+schema:Organization rdfs:comment "Organization or activity entity involved in the production, use, or management of PFAS-related resources." .
+
+schema:Person rdfs:comment "Human individual who may be involved in exposure, residence, or health-related contexts." .
+
+schema:Place rdfs:comment "Geographical or administrative area such as a city, region, country, or continent." .
+
+schema:Product rdfs:comment "Product or service that can be offered, used, or provided by an organization." .
+
+ontopfas:FunctionalGroup rdfs:comment "Reactive chemical group that characterizes the properties of a PFAS molecule." .
+
+ontopfas:LongChainPfas rdfs:comment "PFAS with a relatively long fluorinated carbon chain and greater persistence potential." .
+
+ontopfas:NonPolymerPfas rdfs:comment "PFAS substance composed of discrete molecules rather than polymeric chains." .
+
+ontopfas:Pfaa rdfs:comment "Perfluoroalkyl acid characterized by a fully fluorinated carbon chain and an acidic functional group." .
+
+ontopfas:Pfas rdfs:comment "Per- and polyfluoroalkyl substance belonging to the PFAS family of fluorinated chemicals." .
+
+ontopfas:PfasMobility rdfs:comment "Representation of the environmental mobility level associated with a PFAS." .
+
+ontopfas:PfasPrecursor rdfs:comment "PFAS compound capable of transforming into persistent perfluoroalkyl acids." .
+
+ontopfas:Pfca rdfs:comment "Perfluoroalkyl carboxylic acid, a subclass of PFAA containing a carboxylic acid group." .
+
+ontopfas:Pfoa rdfs:comment "Perfluorooctanoic acid (PFOA), a long-chain perfluoroalkyl carboxylic acid." .
+
+ontopfas:Pfos rdfs:comment "Perfluorooctane sulfonic acid (PFOS), a long-chain perfluoroalkyl sulfonic acid." .
+
+ontopfas:Pfsa rdfs:comment "Perfluoroalkyl sulfonic acid, a subclass of PFAA containing a sulfonic acid group." .
+
+ontopfas:PolymerPfas rdfs:comment "PFAS substance composed of polymeric chains or networks of repeating molecular units." .
+
+ontopfas:ShortChainPfas rdfs:comment "PFAS with a relatively short fluorinated carbon chain." .
+
+ontopfas:UltraShortChainPfas rdfs:comment "PFAS containing at most three carbon atoms in the fluorinated chain." .
+
+ontopfas:VulnerablePerson rdfs:comment "Person considered particularly susceptible to adverse effects from PFAS exposure." .
+
+<https://w3id.org/ocqa/regulation#Regulation> rdfs:comment "Regulatory rule or guideline governing PFAS presence, limits, or restrictions." .
+
+<urn:absolute:ontopfas#Presumptive> rdfs:comment "Observation indicating a presumptive or preliminary PFAS detection." .

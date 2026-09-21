@@ -1,0 +1,103 @@
+102/102
+:Abstract rdfs:comment "A general concept that does not correspond to a concrete, physical or temporal entity."@en .
+:Agent rdfs:comment "An entity capable of performing actions or having intentional behavior."@en .
+:ContactInformation rdfs:comment "Information used to communicate with an entity, such as address or phone number."@en .
+:Document rdfs:comment "A structured information resource intended to convey information."@en .
+:Entity rdfs:comment "Any identifiable thing in the domain of discourse."@en .
+:Event rdfs:comment "A significant occurrence or happening in time."@en .
+:GeneralTerm rdfs:comment "A generic concept or term used for classification."@en .
+:Group rdfs:comment "A collection of entities considered as a whole."@en .
+:Happening rdfs:comment "An occurrence or situation involving one or more participants."@en .
+:InformationResource rdfs:comment "Any resource that contains or conveys information."@en .
+:JobPosition rdfs:comment "A role or employment position within an organization."@en .
+:Language rdfs:comment "A structured system of communication used by a community."@en .
+:Location rdfs:comment "A geographical or spatial position."@en .
+:Number rdfs:comment "A numerical value used for quantification."@en .
+:Object rdfs:comment "A tangible or conceptual thing that can be identified."@en .
+:Organization rdfs:comment "A structured group of agents with a collective purpose."@en .
+:Person rdfs:comment "An individual human being."@en .
+:ProductModel rdfs:comment "A conceptual description of a product type or design."@en .
+:Role rdfs:comment "A function or position assigned to an entity within a context."@en .
+:Service rdfs:comment "An activity or performance provided to fulfill a need."@en .
+:Situation rdfs:comment "A set of circumstances or context at a given time."@en .
+:SocialPosition rdfs:comment "A position or status of an entity within a social structure."@en .
+:Statement rdfs:comment "A declarative expression conveying information or assertion."@en .
+:TimeInterval rdfs:comment "A bounded period between a start and end time."@en .
+:Topic rdfs:comment "A subject or theme of discourse or information."@en .
+:controls rdfs:comment "Indicates governance or authority over an entity."@en .
+:derivedFromSource rdfs:comment "Indicates origin or derivation from a source resource."@en .
+:description rdfs:comment "A textual explanation of an entity."@en .
+:documentAbstract rdfs:comment "A summary or abstract of a document's content."@en .
+:documentAuthor rdfs:comment "The creator or author of a document."@en .
+:documentSubTitle rdfs:comment "A secondary title providing additional context to a document."@en .
+:doingBusinessAs rdfs:comment "An alternative commercial name used by an organization."@en .
+:endTime rdfs:comment "The ending timestamp of a temporal interval."@en .
+:establishedIn rdfs:comment "The context or place where something was established."@en .
+:establishmentDate rdfs:comment "The date when an entity was founded or created."@en .
+:firstName rdfs:comment "The given name of a person."@en .
+:givenName rdfs:comment "A personal name assigned at birth or during naming."@en .
+:hasChild rdfs:comment "Indicates a parent-child relationship."@en .
+:hasContactInfo rdfs:comment "Links an entity to its contact information."@en .
+:hasContributor rdfs:comment "Indicates an entity that contributed to a resource."@en .
+:hasCreator rdfs:comment "Indicates the creator of a resource or entity."@en .
+:hasDate rdfs:comment "Associates an entity with a relevant date."@en .
+:hasEmployee rdfs:comment "Indicates employment relationship with an organization."@en .
+:hasLeader rdfs:comment "Indicates the leader of a group or organization."@en .
+:hasMember rdfs:comment "Indicates membership in a group or organization."@en .
+:hasOldName rdfs:comment "Former name used by an entity."@en .
+:hasParent rdfs:comment "Indicates a parent in a hierarchical relationship."@en .
+:hasParticipant rdfs:comment "Indicates an entity participating in a happening."@en .
+:hasParticipatingEntity rdfs:comment "Indicates an entity involved in a happening."@en .
+:hasPosition rdfs:comment "Indicates a position held within a context."@en .
+:hasRelative rdfs:comment "Indicates a familial or social relation."@en .
+:hasSibling rdfs:comment "Indicates a sibling relationship."@en .
+:hasSocialPosition rdfs:comment "Indicates a social role or status held by an entity."@en .
+:hasSpouse rdfs:comment "Indicates a marital relationship."@en .
+:hasSubject rdfs:comment "Indicates the subject of a statement or document."@en .
+:heldFrom rdfs:comment "Start time of a held position or role."@en .
+:heldTo rdfs:comment "End time of a held position or role."@en .
+:holder rdfs:comment "Entity that holds a role or position."@en .
+:inLanguage rdfs:comment "Indicates the language used in a resource."@en .
+:informationResourceCoverage rdfs:comment "Scope or coverage of an information resource."@en .
+:informationResourceIdentifier rdfs:comment "Unique identifier of an information resource."@en .
+:informationResourceRights rdfs:comment "Rights associated with an information resource."@en .
+:involvedEntityIn rdfs:comment "Indicates participation of an entity in an event or situation."@en .
+:involvedIn rdfs:comment "Indicates involvement in an event or activity."@en .
+:isBossOf rdfs:comment "Indicates managerial authority over another entity."@en .
+:isLegalEntity rdfs:comment "Indicates whether an entity has legal status."@en .
+:isOwnedBy rdfs:comment "Indicates ownership relationship."@en .
+:laconicDescription rdfs:comment "A brief and concise description."@en .
+:lastName rdfs:comment "Family name of a person."@en .
+:latitude rdfs:comment "Geographical coordinate specifying north-south position."@en .
+:locatedIn rdfs:comment "Indicates spatial containment or location."@en .
+:longitude rdfs:comment "Geographical coordinate specifying east-west position."@en .
+:mainLabel rdfs:comment "Primary label used to identify an entity."@en .
+:name rdfs:comment "A generic name identifying an entity."@en .
+:nimaGNSDesignator rdfs:comment "Identifier from the NIMA Geographic Names Server."@en .
+:nimaGNSUniqueFeatureIndentifier rdfs:comment "Unique identifier for a geographic feature in NIMA GNS."@en .
+:numberOfEmployees rdfs:comment "Total number of employees in an organization."@en .
+:operatedBy rdfs:comment "Indicates the entity responsible for operation."@en .
+:owns rdfs:comment "Indicates ownership of an entity."@en .
+:parentOrganizationOf rdfs:comment "Indicates a parent organization relationship."@en .
+:partOf rdfs:comment "Indicates membership or inclusion within a larger whole."@en .
+:partiallyControls rdfs:comment "Indicates partial governance or influence."@en .
+:partiallyOwns rdfs:comment "Indicates partial ownership."@en .
+:populationCount rdfs:comment "Number of inhabitants in a location."@en .
+:producedBy rdfs:comment "Indicates the producer of a product or resource."@en .
+:registeredIn rdfs:comment "Indicates the jurisdiction of registration."@en .
+:resourceFormat rdfs:comment "Format of a digital or informational resource."@en .
+:resourceType rdfs:comment "Type or category of a resource."@en .
+:roleHolder rdfs:comment "Entity that holds a specific role."@en .
+:roleIn rdfs:comment "Context in which a role is defined or applied."@en .
+:socialPositionHolder rdfs:comment "Entity holding a social position."@en .
+:startTime rdfs:comment "Beginning timestamp of a temporal interval."@en .
+:statedBy rdfs:comment "Indicates the source of a statement."@en .
+:subRegionOf rdfs:comment "Indicates a hierarchical geographical relation."@en .
+:subTopicOf rdfs:comment "Indicates thematic hierarchy between topics."@en .
+:subsidiaryOrganizationOf rdfs:comment "Indicates subsidiary relationship between organizations."@en .
+:systemPrimitive rdfs:comment "Basic primitive element in the ontology system."@en .
+:title rdfs:comment "Name or title of a resource."@en .
+:transitiveOver rdfs:comment "Indicates a property is transitive over another relation."@en .
+:validFrom rdfs:comment "Start of validity period."@en .
+:validUntil rdfs:comment "End of validity period."@en .
+:withinOrganization rdfs:comment "Indicates membership or containment within an organization."@en .

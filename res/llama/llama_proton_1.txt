@@ -1,0 +1,205 @@
+8/101
+
+<http://www.ontotext.com/proton/protontop> rdfs:comment "Ontologia upper-level leggera (PROTON). Fornisce un vocabolario di alto livello per annotazione semantica e information extraction. Le classi principali sono Entity, Happening, Abstract e Statement." .
+
+:Entity rdfs:comment "Classe radice per tutto ciò che esiste nel dominio. Si ramifica in Object (entità fisiche), Agent (entità che agiscono), Abstract, Happening, Situation e Statement." .
+
+:Object rdfs:comment "Sottoclasse di Entity. Entità fisica o concreta non agente (es. artefatti, luoghi, documenti). Superclasse di Location, Document, InformationResource, ProductModel." .
+
+:Agent rdfs:comment "Sottoclasse di Entity. Entità capace di agire intenzionalmente. Superclasse di Person, Organization e Group." .
+
+:Person rdfs:comment "Sottoclasse di Agent. Individuo umano. Collegato tramite proprietà come :firstName, :lastName, :hasSpouse, :hasChild, :hasPosition, :hasSocialPosition." .
+
+:Organization rdfs:comment "Sottoclasse di Agent. Entità organizzativa formale (azienda, istituzione, ente). Collegata a Person tramite :hasEmployee, :hasLeader, :hasMember. Può avere :subsidiaryOrganizationOf e :parentOrganizationOf." .
+
+:Group rdfs:comment "Sottoclasse di Agent. Insieme informale di agenti, privo della struttura formale di Organization." .
+
+:Abstract rdfs:comment "Sottoclasse di Entity. Entità astratta priva di esistenza fisica. Superclasse di Topic, Language, Number, Role, JobPosition, SocialPosition, GeneralTerm." .
+
+:Happening rdfs:comment "Sottoclasse di Entity. Evento o processo che si svolge nel tempo. Superclasse di Event. Collegato ai partecipanti tramite :hasParticipant e :hasParticipatingEntity." .
+
+:Event rdfs:comment "Sottoclasse di Happening. Happening con confini temporali definiti. Caratterizzato da :startTime e :endTime." .
+
+:Situation rdfs:comment "Sottoclasse di Entity. Stato di cose persistente nel tempo, distinto da Happening (che è processuale)." .
+
+:Statement rdfs:comment "Sottoclasse di Entity. Asserzione o affermazione attribuibile a un agente tramite :statedBy. Utile per la rappresentazione di notizie, citazioni e fatti riportati." .
+
+:Location rdfs:comment "Sottoclasse di Object. Luogo fisico o geografico. Caratterizzato da :latitude, :longitude, :locatedIn, :subRegionOf, :populationCount." .
+
+:Document rdfs:comment "Sottoclasse di InformationResource. Risorsa documentale con autore (:documentAuthor), abstract (:documentAbstract), sottotitolo (:documentSubTitle) e lingua (:inLanguage)." .
+
+:InformationResource rdfs:comment "Sottoclasse di Object. Risorsa informativa identificabile (:informationResourceIdentifier), con formato (:resourceFormat), tipo (:resourceType) e diritti (:informationResourceRights). Document è una sottoclasse diretta." .
+
+:ProductModel rdfs:comment "Sottoclasse di Object. Modello o tipo di prodotto, distinto dalle singole istanze fisiche. Collegato al produttore tramite :producedBy." .
+
+:Service rdfs:comment "Sottoclasse di Object (o Abstract). Servizio erogabile da un'organizzazione. Collegato all'erogatore tramite :operatedBy." .
+
+:ContactInformation rdfs:comment "Sottoclasse di Abstract. Dati di contatto associati a un agente o organizzazione tramite :hasContactInfo." .
+
+:Role rdfs:comment "Sottoclasse di Abstract. Ruolo ricoperto da un agente in un contesto specifico. Collegato all'agente tramite :roleHolder e al contesto tramite :roleIn e :withinOrganization." .
+
+:JobPosition rdfs:comment "Sottoclasse di Abstract (o Role). Posizione lavorativa formale. Caratterizzata da :heldFrom, :heldTo e :holder. Assegnata tramite :hasPosition." .
+
+:SocialPosition rdfs:comment "Sottoclasse di Abstract. Posizione sociale (es. titolo nobiliare, carica onorifica). Collegata alla persona tramite :hasSocialPosition e :socialPositionHolder." .
+
+:Topic rdfs:comment "Sottoclasse di Abstract. Argomento tematico. Può avere sottotopici tramite :subTopicOf. Collegato a risorse tramite :hasSubject." .
+
+:Language rdfs:comment "Sottoclasse di Abstract. Lingua naturale. Usata per caratterizzare risorse informative tramite :inLanguage." .
+
+:Number rdfs:comment "Sottoclasse di Abstract. Valore numerico rappresentato come entità ontologica, distinto dai literal xsd." .
+
+:GeneralTerm rdfs:comment "Sottoclasse di Abstract. Termine generico non classificabile nelle altre sottoclassi di Abstract. Utile per annotazione di concetti non strutturati." .
+
+:TimeInterval rdfs:comment "Classe che rappresenta un intervallo temporale con :startTime e :endTime. Usata per descrivere la durata di eventi, ruoli e posizioni." .
+
+:controls rdfs:comment "Relazione di controllo totale tra un agente e un'entità (es. organizzazione controlla sussidiaria). Vedi anche :partiallyControls per il controllo parziale." .
+
+:partiallyControls rdfs:comment "Relazione di controllo parziale. Complementare a :controls per i casi in cui il controllo non è esclusivo." .
+
+:owns rdfs:comment "Relazione di proprietà totale tra un agente e un'entità. Complementare a :partiallyOwns e inversa di :isOwnedBy." .
+
+:partiallyOwns rdfs:comment "Relazione di proprietà parziale (es. quota di partecipazione). Complementare a :owns." .
+
+:isOwnedBy rdfs:comment "Inversa di :owns. Collega un'entità al suo proprietario." .
+
+:locatedIn rdfs:comment "Relazione transitiva tra un'entità e la sua Location. Complementare a :subRegionOf per le relazioni geografiche gerarchiche." .
+
+:subRegionOf rdfs:comment "Relazione gerarchica tra Location. Indica che una regione è contenuta in un'altra (es. città → regione → paese)." .
+
+:partOf rdfs:comment "Relazione mereologica generale. Indica che un'entità è parte di un'altra. Usata sia per Object che per Organization." .
+
+:hasParticipant rdfs:comment "Collega un Happening a un agente partecipante (prospettiva del Happening). Inversa di :involvedIn." .
+
+:hasParticipatingEntity rdfs:comment "Collega un Happening a qualsiasi entità partecipante, non necessariamente un agente. Più generale di :hasParticipant." .
+
+:involvedIn rdfs:comment "Collega un'entità ai Happening in cui è coinvolta. Inversa di :hasParticipatingEntity." .
+
+:involvedEntityIn rdfs:comment "Variante di :involvedIn che enfatizza il ruolo dell'entità come partecipante non agente." .
+
+:hasEmployee rdfs:comment "Collega un'Organization a una Person che vi lavora. Complementare a :hasLeader e :hasMember." .
+
+:hasLeader rdfs:comment "Collega un'Organization o Group al suo leader. Più specifico di :hasMember." .
+
+:hasMember rdfs:comment "Collega un'Organization o Group ai suoi membri. Superproprietà di :hasEmployee e :hasLeader." .
+
+:hasPosition rdfs:comment "Collega una Person a una JobPosition ricoperta. Caratterizzata da :heldFrom, :heldTo tramite la JobPosition stessa." .
+
+:hasSocialPosition rdfs:comment "Collega una Person a una SocialPosition (titolo, onorificenza). Complementare a :hasPosition per le posizioni formali." .
+
+:holder rdfs:comment "Collega una JobPosition o SocialPosition alla Person che la ricopre. Inversa funzionale di :hasPosition." .
+
+:roleHolder rdfs:comment "Collega un Role all'agente che lo ricopre. Complementare a :roleIn per il contesto del ruolo." .
+
+:roleIn rdfs:comment "Collega un Role al contesto (organizzazione, evento) in cui è esercitato." .
+
+:withinOrganization rdfs:comment "Specifica l'Organization in cui un Role o JobPosition è esercitato." .
+
+:isBossOf rdfs:comment "Relazione gerarchica tra due agenti. Indica supervisione diretta. Sottoproprietà implicita di :controls nel contesto organizzativo." .
+
+:hasChild rdfs:comment "Relazione familiare tra Person. Inversa di :hasParent." .
+
+:hasParent rdfs:comment "Relazione familiare tra Person. Inversa di :hasChild." .
+
+:hasSibling rdfs:comment "Relazione simmetrica tra Person che condividono almeno un genitore." .
+
+:hasSpouse rdfs:comment "Relazione simmetrica tra Person legate da matrimonio o unione formale." .
+
+:hasRelative rdfs:comment "Relazione familiare generica. Superproprietà di :hasChild, :hasParent, :hasSibling, :hasSpouse." .
+
+:hasContactInfo rdfs:comment "Collega un agente (Person o Organization) alle sue ContactInformation." .
+
+:hasCreator rdfs:comment "Collega una risorsa (Document, InformationResource) al suo creatore (Person o Organization)." .
+
+:hasContributor rdfs:comment "Collega una risorsa ai suoi contributori. Più generale di :hasCreator." .
+
+:hasSubject rdfs:comment "Collega una risorsa informativa al suo Topic. Complementare a :subTopicOf per la navigazione tematica." .
+
+:derivedFromSource rdfs:comment "Indica che un'entità o risorsa è derivata da una fonte primaria. Utile per tracciabilità e provenienza." .
+
+:statedBy rdfs:comment "Collega uno Statement all'agente che lo ha formulato. Fondamentale per la rappresentazione di fatti attribuiti." .
+
+:subTopicOf rdfs:comment "Relazione gerarchica tra Topic. Transitiva: consente navigazione tassonomica degli argomenti." .
+
+:subsidiaryOrganizationOf rdfs:comment "Collega un'Organization alla sua capogruppo. Inversa di :parentOrganizationOf." .
+
+:parentOrganizationOf rdfs:comment "Collega un'Organization alle sue sussidiarie. Inversa di :subsidiaryOrganizationOf." .
+
+:operatedBy rdfs:comment "Collega un Service o struttura all'Organization che lo gestisce." .
+
+:producedBy rdfs:comment "Collega un ProductModel o artefatto al suo produttore (Organization o Person)." .
+
+:registeredIn rdfs:comment "Collega un'Organization alla Location in cui è registrata legalmente." .
+
+:establishedIn rdfs:comment "Collega un'Organization alla Location in cui è stata fondata." .
+
+:establishmentDate rdfs:comment "Data di fondazione di un'Organization. Complementare a :establishedIn per il contesto geografico." .
+
+:isLegalEntity rdfs:comment "Proprietà booleana o classificatoria che indica se un'Organization è un soggetto giuridico riconosciuto." .
+
+:doingBusinessAs rdfs:comment "Nome commerciale alternativo di un'Organization, distinto dalla ragione sociale ufficiale." .
+
+:hasOldName rdfs:comment "Nome precedente di un'entità (Person o Organization). Utile per la disambiguazione storica." .
+
+:mainLabel rdfs:comment "Etichetta principale preferita per un'entità, distinta da rdfs:label che può avere varianti multiple." .
+
+:name rdfs:comment "Proprietà generica per qualsiasi tipo di nome. Superproprietà di :firstName, :lastName, :mainLabel, :givenName." .
+
+:firstName rdfs:comment "Nome proprio di una Person. Complementare a :lastName per la forma completa." .
+
+:lastName rdfs:comment "Cognome di una Person. Complementare a :firstName." .
+
+:givenName rdfs:comment "Nome assegnato alla nascita, che può differire da :firstName in culture con convenzioni diverse." .
+
+:title rdfs:comment "Titolo formale di una Person (es. Dr., Prof.) o di un Document/InformationResource." .
+
+:description rdfs:comment "Descrizione testuale estesa di un'entità. Complementare a :laconicDescription per le descrizioni brevi." .
+
+:laconicDescription rdfs:comment "Descrizione sintetica di un'entità, tipicamente una frase. Complementare a :description per le descrizioni estese." .
+
+:documentAbstract rdfs:comment "Sommario del contenuto di un Document. Distinto da :description per il contesto specificamente documentale." .
+
+:documentSubTitle rdfs:comment "Sottotitolo di un Document. Complementare a :title." .
+
+:documentAuthor rdfs:comment "Autore principale di un Document. Più specifico di :hasCreator." .
+
+:inLanguage rdfs:comment "Lingua di un Document o InformationResource. Range atteso: istanze di Language." .
+
+:informationResourceIdentifier rdfs:comment "Identificatore univoco di una InformationResource (es. ISBN, DOI, URL)." .
+
+:informationResourceCoverage rdfs:comment "Copertura tematica, temporale o geografica di una InformationResource." .
+
+:informationResourceRights rdfs:comment "Diritti di utilizzo e licenza associati a una InformationResource." .
+
+:resourceFormat rdfs:comment "Formato tecnico di una InformationResource (es. PDF, HTML, XML)." .
+
+:resourceType rdfs:comment "Tipo di risorsa (es. articolo, rapporto, dataset). Complementare a :resourceFormat." .
+
+:startTime rdfs:comment "Istante di inizio di un Happening o TimeInterval. Complementare a :endTime." .
+
+:endTime rdfs:comment "Istante di fine di un Happening o TimeInterval. Complementare a :startTime." .
+
+:validFrom rdfs:comment "Data da cui una relazione, posizione o affermazione è considerata valida. Complementare a :validUntil." .
+
+:validUntil rdfs:comment "Data fino a cui una relazione, posizione o affermazione è considerata valida. Complementare a :validFrom." .
+
+:heldFrom rdfs:comment "Data di inizio di una JobPosition o SocialPosition. Complementare a :heldTo." .
+
+:heldTo rdfs:comment "Data di fine di una JobPosition o SocialPosition. Complementare a :heldFrom." .
+
+:hasDate rdfs:comment "Proprietà generica per associare una data a un'entità. Superproprietà implicita di :startTime, :endTime, :establishmentDate." .
+
+:latitude rdfs:comment "Latitudine geografica di una Location in gradi decimali. Complementare a :longitude." .
+
+:longitude rdfs:comment "Longitudine geografica di una Location in gradi decimali. Complementare a :latitude." .
+
+:populationCount rdfs:comment "Numero di abitanti di una Location (città, regione, paese). Valore numerico intero." .
+
+:numberOfEmployees rdfs:comment "Numero di dipendenti di un'Organization. Valore numerico intero." .
+
+:nimaGNSDesignator rdfs:comment "Codice designatore geografico del database NIMA GNS (Geographic Names Server). Usato per l'identificazione univoca di Location geografiche." .
+
+:nimaGNSUniqueFeatureIndentifier rdfs:comment "Identificatore univoco di feature geografica nel database NIMA GNS. Complementare a :nimaGNSDesignator." .
+
+:transitiveOver rdfs:comment "Meta-proprietà che indica che una relazione è transitiva rispetto a un'altra. Usata per definire catene di inferenza (es. :locatedIn transitiva su :subRegionOf)." .
+
+:systemPrimitive rdfs:comment "Annotazione che marca un'entità come primitiva di sistema, non ulteriormente scomponibile nella modellazione PROTON." .

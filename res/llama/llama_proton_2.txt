@@ -1,0 +1,207 @@
+5/102
+
+<http://www.ontotext.com/proton/protontop> rdfs:comment "Ontologia upper-level leggera (PROTON). Fornisce un vocabolario di alto livello per annotazione semantica e information extraction. Le classi principali sono Entity, Happening, Abstract e Statement." .
+
+:Entity rdfs:comment "Classe radice dell'ontologia. Superclasse di Object, Agent, Abstract, Happening, Situation e Statement. Dominio di :description, :name, :mainLabel, :locatedIn, :partOf." .
+
+:Object rdfs:comment "Sottoclasse di Entity. Entità fisica o concreta non agente. Dominio di :hasContactInfo e :isOwnedBy. Superclasse di Location, InformationResource, ProductModel, Service." .
+
+:Agent rdfs:comment "Sottoclasse di Entity. Entità capace di agire intenzionalmente. Dominio di :isLegalEntity e :partiallyControls. Superclasse di Person, Organization, Group." .
+
+:Person rdfs:comment "Sottoclasse di Agent. Individuo umano. Dominio di :firstName, :lastName, :givenName, :hasPosition, :hasSocialPosition, :hasRelative, :isBossOf. Range di :hasEmployee, :hasLeader, :holder, :socialPositionHolder." .
+
+:Organization rdfs:comment "Sottoclasse di Agent. Entità organizzativa formale. Dominio di :doingBusinessAs, :establishedIn, :establishmentDate, :numberOfEmployees, :registeredIn, :parentOrganizationOf, :subsidiaryOrganizationOf." .
+
+:Group rdfs:comment "Sottoclasse di Agent. Insieme informale di agenti. Dominio di :hasMember, che accetta qualsiasi Agent come range." .
+
+:Abstract rdfs:comment "Sottoclasse di Entity. Entità astratta priva di esistenza fisica. Superclasse di GeneralTerm, Number, TimeInterval, Situation, Topic, Language, Role, JobPosition, SocialPosition." .
+
+:Happening rdfs:comment "Sottoclasse di Entity. Evento o processo che si svolge nel tempo. Dominio di :startTime, :endTime, :hasParticipant, :hasParticipatingEntity. Superclasse di Event." .
+
+:Event rdfs:comment "Sottoclasse di Happening. Happening con confini temporali definiti tramite :startTime e :endTime." .
+
+:Situation rdfs:comment "Sottoclasse di Abstract. Stato di cose persistente nel tempo, distinto da Happening (processuale)." .
+
+:Statement rdfs:comment "Sottoclasse di Entity. Asserzione attribuibile a un agente tramite :statedBy. Dominio di :validFrom e :validUntil per la temporalizzazione della validità." .
+
+:Location rdfs:comment "Sottoclasse di Object. Luogo fisico o geografico. Dominio di :latitude, :longitude, :populationCount, :subRegionOf, :nimaGNSDesignator, :nimaGNSUniqueFeatureIndentifier." .
+
+:InformationResource rdfs:comment "Sottoclasse di Object. Risorsa informativa identificabile. Dominio di :derivedFromSource, :hasContributor, :hasDate, :hasSubject, :inLanguage, :informationResourceIdentifier, :informationResourceCoverage, :informationResourceRights, :resourceFormat, :resourceType, :title. Superclasse di Document." .
+
+:Document rdfs:comment "Sottoclasse di InformationResource. Risorsa documentale con :documentAuthor, :documentAbstract e :documentSubTitle." .
+
+:ProductModel rdfs:comment "Sottoclasse di Object. Modello di prodotto. Dominio di :producedBy, che collega il modello all'Agent produttore." .
+
+:Service rdfs:comment "Sottoclasse di Object. Servizio erogabile. Dominio di :operatedBy, che collega il servizio all'Agent che lo gestisce." .
+
+:ContactInformation rdfs:comment "Sottoclasse di Abstract. Dati di contatto. Range di :hasContactInfo, il cui dominio è Object." .
+
+:Role rdfs:comment "Sottoclasse di Abstract. Ruolo ricoperto da un'entità in un Happening. Dominio di :roleHolder (range: Entity) e :roleIn (range: Happening)." .
+
+:JobPosition rdfs:comment "Sottoclasse di Abstract. Posizione lavorativa formale. Dominio di :heldFrom, :heldTo, :holder (range: Person), :withinOrganization (range: Organization). Inversa di :hasPosition." .
+
+:SocialPosition rdfs:comment "Sottoclasse di Abstract. Posizione sociale o onorifica. Dominio di :socialPositionHolder (range: Person). Inversa di :hasSocialPosition." .
+
+:Topic rdfs:comment "Sottoclasse di Abstract. Argomento tematico. Dominio di :subTopicOf (transitiva su Topic). Range di :hasSubject." .
+
+:Language rdfs:comment "Sottoclasse di Abstract. Lingua naturale. Range di :inLanguage, il cui dominio è InformationResource." .
+
+:GeneralTerm rdfs:comment "Sottoclasse di Abstract. Termine generico non classificabile nelle altre sottoclassi di Abstract." .
+
+:Number rdfs:comment "Sottoclasse di Abstract. Valore numerico rappresentato come entità ontologica, distinto dai literal xsd." .
+
+:TimeInterval rdfs:comment "Sottoclasse di Abstract. Intervallo temporale con :startTime e :endTime. Usato per descrivere la durata di eventi, ruoli e posizioni." .
+
+:controls rdfs:comment "Relazione di controllo totale tra un agente e un'entità. Complementare a :partiallyControls per il controllo non esclusivo." .
+
+:partiallyControls rdfs:comment "Relazione di controllo parziale. Dominio: Agent; range: Object. Complementare a :controls." .
+
+:owns rdfs:comment "Relazione di proprietà totale. Complementare a :partiallyOwns e logicamente inversa di :isOwnedBy (inversa non dichiarata esplicitamente)." .
+
+:partiallyOwns rdfs:comment "Relazione di proprietà parziale (es. quota di partecipazione). Complementare a :owns." .
+
+:isOwnedBy rdfs:comment "Dominio: Object; range: Agent. Inversa logica di :owns (inversa non dichiarata esplicitamente)." .
+
+:locatedIn rdfs:comment "Dominio: Entity; range: Location. Relazione potenzialmente transitiva tramite :transitiveOver su :subRegionOf." .
+
+:subRegionOf rdfs:comment "Dominio: Location. Relazione geografica gerarchica (es. città → regione → paese). Complementare a :locatedIn." .
+
+:partOf rdfs:comment "Dominio e range: Entity. Relazione mereologica generale. Usata sia per Object che per Organization e Location." .
+
+:hasParticipant rdfs:comment "Dominio: Happening; range: Agent. Inversa di :involvedIn. Più restrittiva di :hasParticipatingEntity (solo agenti)." .
+
+:hasParticipatingEntity rdfs:comment "Dominio: Happening; range: Entity. Inversa di :involvedEntityIn. Più generale di :hasParticipant: accetta qualsiasi Entity." .
+
+:involvedIn rdfs:comment "Dominio: Agent o Entity; range: Happening. Inversa di :hasParticipant." .
+
+:involvedEntityIn rdfs:comment "Dominio: Entity; range: Happening. Inversa di :hasParticipatingEntity." .
+
+:hasEmployee rdfs:comment "Range: Person. Collega un'Organization a una Person che vi lavora. Più specifico di :hasMember." .
+
+:hasLeader rdfs:comment "Range: Person. Collega un'Organization o Group al suo leader. Più specifico di :hasMember." .
+
+:hasMember rdfs:comment "Dominio: Group; range: Agent. Superproprietà implicita di :hasEmployee e :hasLeader." .
+
+:hasPosition rdfs:comment "Dominio: Person; range: JobPosition. Inversa di :holder. Collega una Person alla sua JobPosition formale." .
+
+:holder rdfs:comment "Dominio: JobPosition; range: Person. Inversa di :hasPosition." .
+
+:hasSocialPosition rdfs:comment "Dominio: Person; range: SocialPosition. Inversa di :socialPositionHolder." .
+
+:socialPositionHolder rdfs:comment "Dominio: SocialPosition; range: Person. Inversa di :hasSocialPosition." .
+
+:roleHolder rdfs:comment "Dominio: Role; range: Entity. Collega un Role all'entità che lo ricopre." .
+
+:roleIn rdfs:comment "Dominio: Role; range: Happening. Collega un Role al Happening in cui è esercitato." .
+
+:withinOrganization rdfs:comment "Dominio: JobPosition; range: Organization. Specifica l'Organization in cui la JobPosition è esercitata." .
+
+:isBossOf rdfs:comment "Dominio e range: Person. Relazione di supervisione diretta tra due Person. Sottoproprietà implicita di :controls nel contesto organizzativo." .
+
+:hasChild rdfs:comment "Inversa di :hasParent. Relazione familiare tra Person." .
+
+:hasParent rdfs:comment "Inversa di :hasChild. Relazione familiare tra Person." .
+
+:hasSibling rdfs:comment "Relazione simmetrica tra Person che condividono almeno un genitore." .
+
+:hasSpouse rdfs:comment "Relazione simmetrica tra Person legate da matrimonio o unione formale." .
+
+:hasRelative rdfs:comment "Dominio e range: Person. Relazione familiare generica. Superproprietà implicita di :hasChild, :hasParent, :hasSibling, :hasSpouse." .
+
+:hasContactInfo rdfs:comment "Dominio: Object; range: ContactInformation. Collega un agente o organizzazione ai suoi dati di contatto." .
+
+:hasCreator rdfs:comment "Collega una risorsa al suo creatore. Più specifico di :hasContributor. Dominio e range non dichiarati esplicitamente nel file." .
+
+:hasContributor rdfs:comment "Dominio: InformationResource; range: Agent. Collega una risorsa ai suoi contributori. Più generale di :hasCreator." .
+
+:hasSubject rdfs:comment "Dominio: InformationResource; range: Topic. Collega una risorsa al suo argomento tematico." .
+
+:derivedFromSource rdfs:comment "Dominio e range: InformationResource. Indica che una risorsa è derivata da un'altra. Utile per tracciabilità e provenienza." .
+
+:statedBy rdfs:comment "Dominio: Statement; range: Agent. Collega uno Statement all'agente che lo ha formulato." .
+
+:subTopicOf rdfs:comment "Dominio e range: Topic. Relazione gerarchica tra argomenti. Transitiva: consente navigazione tassonomica." .
+
+:parentOrganizationOf rdfs:comment "Dominio e range: Organization. Inversa di :subsidiaryOrganizationOf. Collega una capogruppo alle sue sussidiarie." .
+
+:subsidiaryOrganizationOf rdfs:comment "Dominio e range: Organization. Inversa di :parentOrganizationOf. Collega una sussidiaria alla sua capogruppo." .
+
+:operatedBy rdfs:comment "Dominio: Service; range: Agent. Collega un servizio all'agente che lo gestisce operativamente." .
+
+:producedBy rdfs:comment "Dominio: ProductModel; range: Agent. Collega un modello di prodotto al suo produttore." .
+
+:registeredIn rdfs:comment "Dominio: Organization. Collega un'Organization alla Location in cui è registrata legalmente." .
+
+:establishedIn rdfs:comment "Dominio: Organization. Collega un'Organization alla Location in cui è stata fondata." .
+
+:establishmentDate rdfs:comment "Dominio: Organization. Data di fondazione. Complementare a :establishedIn per il contesto geografico." .
+
+:isLegalEntity rdfs:comment "Dominio: Agent. Indica se un agente è un soggetto giuridico riconosciuto." .
+
+:doingBusinessAs rdfs:comment "Dominio: Organization. Nome commerciale alternativo rispetto alla ragione sociale ufficiale." .
+
+:hasOldName rdfs:comment "Nome precedente di un'entità. Utile per la disambiguazione storica di Person e Organization." .
+
+:mainLabel rdfs:comment "Dominio: Entity; range: rdfs:Literal. Etichetta principale preferita, distinta da rdfs:label che può avere varianti multiple." .
+
+:name rdfs:comment "Dominio: Entity; range: rdfs:Literal. Proprietà generica per qualsiasi tipo di nome. Superproprietà implicita di :firstName, :lastName, :givenName, :mainLabel." .
+
+:firstName rdfs:comment "Dominio: Person. Nome proprio. Complementare a :lastName." .
+
+:lastName rdfs:comment "Dominio: Person. Cognome. Complementare a :firstName." .
+
+:givenName rdfs:comment "Dominio: Person. Nome assegnato alla nascita, che può differire da :firstName in culture con convenzioni di denominazione diverse." .
+
+:title rdfs:comment "Dominio: InformationResource. Titolo formale di un documento o risorsa." .
+
+:description rdfs:comment "Dominio: Entity. Descrizione testuale estesa. Complementare a :laconicDescription per le descrizioni sintetiche." .
+
+:laconicDescription rdfs:comment "Descrizione sintetica di un'entità, tipicamente una frase. Complementare a :description per le descrizioni estese." .
+
+:documentAbstract rdfs:comment "Dominio: Document. Sommario del contenuto. Distinto da :description per il contesto specificamente documentale." .
+
+:documentSubTitle rdfs:comment "Dominio: Document. Sottotitolo. Complementare a :title." .
+
+:documentAuthor rdfs:comment "Range: Agent. Autore principale di un Document. Più specifico di :hasCreator." .
+
+:inLanguage rdfs:comment "Dominio: InformationResource; range: Language. Collega una risorsa alla sua lingua." .
+
+:informationResourceIdentifier rdfs:comment "Dominio: InformationResource. Identificatore univoco (es. ISBN, DOI, URL)." .
+
+:informationResourceCoverage rdfs:comment "Dominio: InformationResource. Copertura tematica, temporale o geografica della risorsa." .
+
+:informationResourceRights rdfs:comment "Dominio: InformationResource. Diritti di utilizzo e licenza." .
+
+:resourceFormat rdfs:comment "Dominio: InformationResource. Formato tecnico (es. PDF, HTML, XML)." .
+
+:resourceType rdfs:comment "Dominio: InformationResource. Tipo di risorsa (es. articolo, rapporto, dataset). Complementare a :resourceFormat." .
+
+:hasDate rdfs:comment "Dominio: InformationResource. Proprietà generica per associare una data a una risorsa." .
+
+:startTime rdfs:comment "Dominio: Happening. Istante di inizio. Complementare a :endTime." .
+
+:endTime rdfs:comment "Dominio: Happening. Istante di fine. Complementare a :startTime." .
+
+:validFrom rdfs:comment "Dominio: Statement. Data da cui lo Statement è considerato valido. Complementare a :validUntil." .
+
+:validUntil rdfs:comment "Dominio: Statement. Data fino a cui lo Statement è considerato valido. Complementare a :validFrom." .
+
+:heldFrom rdfs:comment "Dominio: JobPosition. Data di inizio della posizione lavorativa. Complementare a :heldTo." .
+
+:heldTo rdfs:comment "Dominio: JobPosition. Data di fine della posizione lavorativa. Complementare a :heldFrom." .
+
+:latitude rdfs:comment "Dominio: Location. Latitudine geografica in gradi decimali. Complementare a :longitude." .
+
+:longitude rdfs:comment "Dominio: Location. Longitudine geografica in gradi decimali. Complementare a :latitude." .
+
+:populationCount rdfs:comment "Dominio: Location. Numero di abitanti di una Location geografica." .
+
+:numberOfEmployees rdfs:comment "Dominio: Organization. Numero di dipendenti." .
+
+:nimaGNSDesignator rdfs:comment "Dominio: Location. Codice designatore geografico del database NIMA GNS." .
+
+:nimaGNSUniqueFeatureIndentifier rdfs:comment "Dominio: Location. Identificatore univoco di feature geografica nel database NIMA GNS. Complementare a :nimaGNSDesignator." .
+
+:transitiveOver rdfs:comment "Meta-proprietà che indica transitività composta tra due relazioni (es. :locatedIn transitiva su :subRegionOf)." .
+
+:systemPrimitive rdfs:comment "Annotazione che marca un'entità come primitiva di sistema, non ulteriormente scomponibile nella modellazione PROTON." .

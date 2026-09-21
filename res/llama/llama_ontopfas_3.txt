@@ -1,0 +1,80 @@
+16/39
+ontopfas:Pfas rdfs:comment "Classe radice della gerarchia PFAS. Include tutte le sostanze per- e polifluoroalchiliche, caratterizzate da legami carbonio-fluoro estremamente stabili." .
+
+ontopfas:Pfaa rdfs:comment "Sottoclasse di Pfas. Gli acidi perfluoroalchilici sono i prodotti finali della degradazione ambientale di molti precursori PFAS." .
+
+ontopfas:Pfca rdfs:comment "Sottoclasse di Pfaa. Comprende composti come PFOA. La lunghezza della catena carboniosa ne determina la classificazione in corta, lunga o ultracorta." .
+
+ontopfas:Pfsa rdfs:comment "Sottoclasse di Pfaa. Comprende composti come PFOS. Tendenzialmente più persistenti e bioaccumulabili rispetto alle PFCA di pari lunghezza." .
+
+ontopfas:Pfoa rdfs:comment "Sottoclasse di LongChainPfas e Pfca. Classificata come possibile cancerogeno per l'uomo (IARC Gruppo 2B) e soggetta a restrizioni globali." .
+
+ontopfas:Pfos rdfs:comment "Sottoclasse di LongChainPfas e Pfsa. Inclusa nella Convenzione di Stoccolma come inquinante organico persistente (POP)." .
+
+ontopfas:PfasPrecursor rdfs:comment "Sottoclasse di Pfas. I precursori possono trasformarsi in PFAAs tramite biotrasformazione o degradazione abiotica. obo:CHEBI_83814 (Fluorotelomer) è una sottoclasse diretta." .
+
+ontopfas:LongChainPfas rdfs:comment "Sottoclasse di Pfas. Le catene lunghe mostrano maggiore bioaccumulazione e persistenza ambientale, per questo soggette a maggiori restrizioni normative." .
+
+ontopfas:ShortChainPfas rdfs:comment "Sottoclasse di Pfas. Sviluppate come alternative alle catene lunghe, presentano maggiore mobilità ambientale e idrosolubilità. UltraShortChainPfas è una sottoclasse diretta." .
+
+ontopfas:UltraShortChainPfas rdfs:comment "Sottoclasse di ShortChainPfas. Le catene ultracorte (≤3 atomi di carbonio) sono le più mobili e difficili da rimuovere con i trattamenti convenzionali delle acque." .
+
+ontopfas:PolymerPfas rdfs:comment "Sottoclasse di Pfas. I polimeri sono generalmente considerati a rischio inferiore rispetto ai non-polimeri, ma possono degradarsi rilasciando monomeri o PFAA." .
+
+ontopfas:NonPolymerPfas rdfs:comment "Sottoclasse di Pfas. Comprende la maggior parte delle sostanze di preoccupazione normativa. Pfaa è una sottoclasse diretta." .
+
+ontopfas:FunctionalGroup rdfs:comment "Sottoclasse di obo:CHEBI_24431. Il gruppo funzionale determina la classificazione del PFAS (es. acido carbossilico → PFCA, acido sulfonico → PFSA). Legato al PFAS tramite ontopfas:functionalGroup, sottoproprietà di BFO:part_of." .
+
+ontopfas:PfasMobility rdfs:comment "La mobilità dipende dalla lunghezza della catena, dal gruppo funzionale e dalla matrice ambientale. Collegata al PFAS tramite ontopfas:mobility e all'ambiente tramite ontopfas:mobilityInEnvironment." .
+
+ontopfas:VulnerablePerson rdfs:comment "Sottoclasse di schema:Person. Include neonati, bambini, donne in gravidanza e individui con patologie preesistenti, per i quali i limiti di esposizione raccomandati sono generalmente più bassi." .
+
+<https://w3id.org/ocqa/regulation#Regulation> rdfs:comment "Collega i PFAS tramite ontopfas:restricts/restrictedBy e specifica i limiti massimi ammissibili per ambiente (validInEnvironment) e giurisdizione (validInPlace)." .
+
+<urn:absolute:ontopfas#Presumptive> rdfs:comment "Sottoclasse di sosa:Observation. Indica una misurazione basata su evidenze indirette o metodi analitici non definitivi. Richiede conferma tramite analisi targeted." .
+
+obo:CHEBI_172406 rdfs:comment "Sottoclasse di Pfas. Rappresenta i composti polifluoroalchilici, in cui la catena carboniosa è solo parzialmente fluorurata (almeno un legame C-H residuo)." .
+
+obo:CHEBI_24531 rdfs:comment "Sottoclasse di Pfas. Rappresenta i composti perfluoroalchilici, con catena carboniosa completamente fluorurata. Pfaa è una sottoclasse diretta." .
+
+obo:CHEBI_83814 rdfs:comment "Sottoclasse di PfasPrecursor. I fluorotelomeri sono sintetizzati per telomerizzazione e trovano impiego in schiume antincendio, imballaggi alimentari e impermeabilizzanti." .
+
+obo:ExO_0000022 rdfs:comment "Classe centrale per il dominio dell'esposizione. Collegata ai PFAS tramite ontopfas:stimulatedBy/stimulates e alle persone tramite ontopfas:exposureStimulusOf." .
+
+ontopfas:concernLevel rdfs:comment "I valori attesi sono 'low', 'medium', 'high'. Dipende da persistenza, bioaccumulazione, tossicità e mobilità ambientale del PFAS." .
+
+ontopfas:numberOfCarbons rdfs:comment "Valore intero discriminante per la classificazione: ≤3 → UltraShortChain; <8 (PFCA) o <6 (PFSA) → ShortChain; >7 (PFCA) o >5 (PFSA) → LongChain." .
+
+ontopfas:isHydrophilic rdfs:comment "Proprietà booleana. I PFAS idrofili tendono a concentrarsi nelle acque superficiali e sotterranee, aumentando il rischio di esposizione tramite acqua potabile." .
+
+ontopfas:isEther rdfs:comment "Proprietà booleana. I PFAS eterei (es. GenX) sono stati introdotti come sostituti di PFOA ma mostrano anch'essi preoccupanti profili di persistenza." .
+
+ontopfas:limit rdfs:comment "Valore numerico espresso nell'unità indicata da ontopfas:unit. Associato alla normativa di riferimento tramite la classe Regulation." .
+
+ontopfas:precision rdfs:comment "Operatore di confronto associato al valore misurato o al limite normativo. Valori tipici: '<', '>', '≤', '≥', '='." .
+
+ontopfas:casId rdfs:comment "Identificatore univoco della sostanza nel registro CAS. Formato standard: XXXXXXX-YY-Z." .
+
+ontopfas:mobilityDegree rdfs:comment "Valore intero che esprime quantitativamente il grado di mobilità del PFAS nella matrice considerata." .
+
+ontopfas:unit rdfs:comment "Fattore moltiplicativo per la conversione dell'unità di misura associata a sosa:Observation. Es. 0.001 per ng/L, 1000 per μg/L." .
+
+ontopfas:measuredPfas rdfs:comment "Collega un'osservazione SOSA al PFAS rilevato. Permette di tracciare quale sostanza specifica è stata misurata in un dato campionamento." .
+
+ontopfas:matrix rdfs:comment "Indica la matrice ambientale (acqua, suolo, aria, biota) in cui è stata effettuata la misurazione. Fondamentale per l'interpretazione del dato analitico." .
+
+ontopfas:stimulates rdfs:comment "Collega un PFAS allo stimolo di esposizione che genera. Punto di raccordo tra il dominio chimico e il dominio epidemiologico dell'ontologia." .
+
+ontopfas:transportedBy rdfs:comment "Indica l'entità biologica (obo:PCO_0000031) che trasporta il PFAS, rilevante per modelli di bioaccumulazione e trasferimento nella catena alimentare." .
+
+ontopfas:restrictedBy rdfs:comment "Collega un PFAS alla normativa che ne limita la presenza in un ambiente. Inversa di ontopfas:restricts." .
+
+ontopfas:functionalGroup rdfs:comment "Sottoproprietà di BFO:part_of. Collega il PFAS al suo gruppo funzionale, determinante per la classificazione in PFCA, PFSA o altre sottoclassi." .
+
+sosa:Observation rdfs:comment "Rappresenta una singola misurazione di PFAS. Si collega al PFAS tramite ontopfas:measuredPfas, alla localizzazione tramite ontopfas:measuredIn e alla matrice ambientale tramite ontopfas:matrix." .
+
+obo:RO_0002170 rdfs:comment "Proprietà simmetrica e transitiva. Utilizzata per esprimere connessioni strutturali tra zone ambientali o tra componenti del sistema di monitoraggio PFAS." .
+
+<http://semanticscience.org/resource/SIO_000652> rdfs:comment "Proprietà simmetrica. Esprime connessione diretta tra due entità senza strutture intermedie. Distinta da obo:RO_0002170 per l'assenza di transitività." .
+
+<https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title> rdfs:comment "Proprietà utilizzata per assegnare un titolo leggibile ai dataset catalogati. Dominio: dcat:Dataset; range: xsd:string." .

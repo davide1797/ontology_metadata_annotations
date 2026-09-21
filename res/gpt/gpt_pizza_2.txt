@@ -1,0 +1,104 @@
+95/103
+:American rdfs:comment "A named pizza class representing an American-style pizza defined by specific topping constraints."@en .
+:AmericanHot rdfs:comment "A spicy American-style pizza with additional hot toppings and constraints."@en .
+:AnchoviesTopping rdfs:comment "A fish-based pizza topping made from anchovies."@en .
+:ArtichokeTopping rdfs:comment "A vegetable pizza topping made from artichokes."@en .
+:AsparagusTopping rdfs:comment "A vegetable pizza topping made from asparagus."@en .
+:Cajun rdfs:comment "A named pizza inspired by Cajun cuisine with multiple spicy ingredient constraints."@en .
+:CajunSpiceTopping rdfs:comment "A herb/spice topping based on Cajun seasoning."@en .
+:CaperTopping rdfs:comment "A vegetable topping made from capers."@en .
+:Capricciosa rdfs:comment "A named pizza with a complex combination of traditional Italian toppings."@en .
+:Caprina rdfs:comment "A named pizza typically featuring goat cheese and related ingredients."@en .
+:CheeseTopping rdfs:comment "A topping category consisting of cheese-based ingredients."@en .
+:CheeseyPizza rdfs:comment "A pizza characterized by cheese as a primary ingredient."@en .
+:CheeseyVegetableTopping rdfs:comment "A combined topping made of cheese and vegetables."@en .
+:ChickenTopping rdfs:comment "A meat-based topping made from chicken."@en .
+:Country rdfs:comment "A geopolitical entity representing a nation state."@en .
+:DeepPanBase rdfs:comment "A thick, deep-dish style pizza base."@en .
+:Fiorentina rdfs:comment "A named pizza inspired by Florentine cuisine with specific toppings."@en .
+:FishTopping rdfs:comment "A category of seafood-based pizza toppings."@en .
+:FourCheesesTopping rdfs:comment "A topping composed of four different cheese types."@en .
+:FourSeasons rdfs:comment "A named pizza divided into sections representing different topping groups."@en .
+:FruitTopping rdfs:comment "A topping category consisting of fruit-based ingredients."@en .
+:FruttiDiMare rdfs:comment "A seafood pizza featuring mixed marine toppings."@en .
+:GarlicTopping rdfs:comment "A vegetable topping made from garlic."@en .
+:Giardiniera rdfs:comment "A named pizza with mixed vegetable toppings inspired by Italian giardiniera."@en .
+:GoatsCheeseTopping rdfs:comment "A cheese topping made from goat cheese."@en .
+:GorgonzolaTopping rdfs:comment "A cheese topping made from Gorgonzola."@en .
+:GreenPepperTopping rdfs:comment "A vegetable topping made from green peppers."@en .
+:HamTopping rdfs:comment "A meat topping made from ham."@en .
+:HerbSpiceTopping rdfs:comment "A topping category consisting of herbs and spices."@en .
+:Hot rdfs:comment "A spiciness level indicating strong heat."@en .
+:HotGreenPepperTopping rdfs:comment "A spicy green pepper topping."@en .
+:HotSpicedBeefTopping rdfs:comment "A spicy beef-based pizza topping."@en .
+:IceCream rdfs:comment "A frozen dessert concept included in ontology for completeness."@en .
+:InterestingPizza rdfs:comment "A generic class representing pizzas considered interesting by unspecified criteria."@en .
+:JalapenoPepperTopping rdfs:comment "A spicy pepper topping made from jalapeños."@en .
+:LaReine rdfs:comment "A named pizza typically containing ham, mushrooms, and other toppings."@en .
+:LeekTopping rdfs:comment "A vegetable topping made from leeks."@en .
+:Margherita rdfs:comment "A classic pizza with tomato, mozzarella, and simple toppings."@en .
+:MeatTopping rdfs:comment "A category of pizza toppings derived from meat."@en .
+:MeatyPizza rdfs:comment "A pizza characterized by the presence of meat toppings."@en .
+:Medium rdfs:comment "A spiciness level indicating moderate heat."@en .
+:Mild rdfs:comment "A spiciness level indicating low or no heat."@en .
+:MixedSeafoodTopping rdfs:comment "A seafood topping consisting of multiple types of seafood."@en .
+:MozzarellaTopping rdfs:comment "A cheese topping made from mozzarella."@en .
+:Mushroom rdfs:comment "A named pizza characterized by mushroom toppings."@en .
+:MushroomTopping rdfs:comment "A vegetable topping made from mushrooms."@en .
+:NamedPizza rdfs:comment "A pizza class representing pizzas with specific predefined names and constraints."@en .
+:Napoletana rdfs:comment "A named pizza inspired by Neapolitan style cuisine."@en .
+:NonVegetarianPizza rdfs:comment "A class of pizzas containing meat or animal-derived ingredients."@en .
+:NutTopping rdfs:comment "A topping category consisting of nut-based ingredients."@en .
+:OliveTopping rdfs:comment "A vegetable topping made from olives."@en .
+:OnionTopping rdfs:comment "A vegetable topping made from onions."@en .
+:ParmaHamTopping rdfs:comment "A meat topping made from Parma ham."@en .
+:Parmense rdfs:comment "A named pizza inspired by Parmesan and Parma ingredients."@en .
+:ParmesanTopping rdfs:comment "A cheese topping made from Parmesan cheese."@en .
+:PeperonataTopping rdfs:comment "A vegetable topping inspired by peperonata mix."@en .
+:PeperoniSausageTopping rdfs:comment "A spicy sausage meat topping."@en .
+:PepperTopping rdfs:comment "A vegetable topping made from peppers."@en .
+:PetitPoisTopping rdfs:comment "A vegetable topping made from peas."@en .
+:PineKernels rdfs:comment "A nut topping made from pine nuts."@en .
+:PolloAdAstra rdfs:comment "A named pizza featuring chicken and spicy thematic ingredients."@en .
+:PrawnsTopping rdfs:comment "A seafood topping made from prawns."@en .
+:PrinceCarlo rdfs:comment "A named pizza with cheese and vegetable/meat combinations."@en .
+:QuattroFormaggi rdfs:comment "A pizza featuring four different cheeses."@en .
+:RealItalianPizza rdfs:comment "A class representing pizzas conforming to traditional Italian definitions."@en .
+:RedOnionTopping rdfs:comment "A vegetable topping made from red onions."@en .
+:RocketTopping rdfs:comment "A vegetable topping made from rocket (arugula)."@en .
+:Rosa rdfs:comment "A named pizza defined by specific ingredient constraints."@en .
+:RosemaryTopping rdfs:comment "A herb/spice topping made from rosemary."@en .
+:SauceTopping rdfs:comment "A topping category consisting of sauce-based ingredients."@en .
+:Siciliana rdfs:comment "A named pizza inspired by Sicilian cuisine."@en .
+:SlicedTomatoTopping rdfs:comment "A vegetable topping made from sliced tomatoes."@en .
+:SloppyGiuseppe rdfs:comment "A named pizza characterized by heavily seasoned meat toppings."@en .
+:Soho rdfs:comment "A named pizza with modern and mixed ingredient constraints."@en .
+:SpicyPizza rdfs:comment "A class representing pizzas with spicy characteristics."@en .
+:SpicyPizzaEquivalent rdfs:comment "A logically equivalent definition of spicy pizza."@en .
+:SpicyTopping rdfs:comment "A topping category characterized by spicy properties."@en .
+:SpinachTopping rdfs:comment "A vegetable topping made from spinach."@en .
+:SultanaTopping rdfs:comment "A fruit topping made from dried grapes (sultanas)."@en .
+:SundriedTomatoTopping rdfs:comment "A vegetable topping made from sun-dried tomatoes."@en .
+:SweetPepperTopping rdfs:comment "A mild pepper topping made from sweet peppers."@en .
+:ThinAndCrispyBase rdfs:comment "A thin, crispy pizza base."@en .
+:TobascoPepperSauce rdfs:comment "A spicy sauce topping based on Tabasco-style sauce."@en .
+:TomatoTopping rdfs:comment "A vegetable topping made from tomatoes."@en .
+:UnclosedPizza rdfs:comment "A named pizza class with incomplete closure constraints."@en .
+:ValuePartition rdfs:comment "A class representing controlled value partitions in the ontology."@en .
+:VegetableTopping rdfs:comment "A topping category consisting of vegetables."@en .
+:VegetarianPizza rdfs:comment "A class of pizzas without meat-based toppings."@en .
+:VegetarianPizzaEquivalent1 rdfs:comment "An equivalent logical definition of vegetarian pizza."@en .
+:VegetarianPizzaEquivalent2 rdfs:comment "An alternative equivalent definition of vegetarian pizza."@en .
+:VegetarianTopping rdfs:comment "A topping suitable for vegetarian pizzas."@en .
+:Veneziana rdfs:comment "A named pizza inspired by Venetian cuisine."@en .
+:Spiciness rdfs:comment "A value partition representing the level of spiciness of a pizza or ingredient."@en .
+:PizzaBase rdfs:comment "The base component of a pizza on which toppings are placed."@en .
+:PizzaTopping rdfs:comment "A general class representing any topping added to a pizza."@en .
+:Pizza rdfs:comment "A food class representing pizzas as composed food entities."@en .
+:hasBase rdfs:comment "Property linking a pizza to its base component."@en .
+:hasIngredient rdfs:comment "Transitive property linking food items to their ingredients."@en .
+:hasSpiciness rdfs:comment "Property indicating the spiciness level of an entity."@en .
+:hasTopping rdfs:comment "Property linking a pizza to its toppings."@en .
+:isBaseOf rdfs:comment "Inverse property linking a base to the pizzas that use it."@en .
+:isIngredientOf rdfs:comment "Inverse property linking ingredients to composed foods."@en .
+:isToppingOf rdfs:comment "Inverse property linking toppings to pizzas they belong to."@en .

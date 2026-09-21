@@ -1,0 +1,172 @@
+66/85
+:DomainConcept rdfs:comment "Classe radice dell'ontologia. Tutte le entità del dominio (Food, Country, ValuePartition) sono sottoclassi di DomainConcept." .
+
+:Food rdfs:comment "Sottoclasse di DomainConcept. Superclasse di Pizza, PizzaBase e PizzaTopping. Dominio e range di :hasIngredient, che è transitiva." .
+
+:Pizza rdfs:comment "Sottoclasse di Food. Ogni pizza deve avere esattamente una base (:hasBase, funzionale) e almeno un condimento (:hasTopping). Superclasse di NamedPizza." .
+
+:NamedPizza rdfs:comment "Sottoclasse di Pizza. Raggruppa le pizze con un nome commerciale specifico. Tutte le pizze nominate (Margherita, Napoletana, ecc.) sono sottoclassi dirette." .
+
+:RealItalianPizza rdfs:comment "Sottoclasse di NamedPizza (inferita tramite restrizione). Rappresenta le pizze della tradizione italiana autentica, tipicamente con ThinAndCrispyBase." .
+
+:ThinAndCrispyPizza rdfs:comment "Classe ausiliaria che raggruppa le pizze con base sottile (ThinAndCrispyBase). Usata internamente per vincoli o ragionamento, priva di label esplicita." .
+
+:PizzaBase rdfs:comment "Sottoclasse di Food. Base della pizza. Proprietà :hasBase è funzionale e inversamente funzionale: una pizza ha esattamente una base e una base appartiene a esattamente una pizza." .
+
+:ThinAndCrispyBase rdfs:comment "Sottoclasse di PizzaBase. Base sottile e croccante, tipica della tradizione italiana. Richiesta da RealItalianPizza." .
+
+:DeepPanBase rdfs:comment "Sottoclasse di PizzaBase. Base spessa in teglia, tipica della tradizione americana." .
+
+:PizzaTopping rdfs:comment "Sottoclasse di Food. Classe radice di tutti i condimenti. :hasTopping è inversamente funzionale: un condimento può appartenere a una sola pizza per istanza." .
+
+:CheeseTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa tutti i condimenti a base di formaggio. Appartiene a VegetarianTopping." .
+
+:CheeseyVegetableTopping rdfs:comment "Sottoclasse sia di CheeseTopping che di VegetableTopping. Condimento ibrido che combina formaggio e verdure. Appartiene a VegetarianTopping." .
+
+:MeatTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa i condimenti a base di carne. Non appartiene a VegetarianTopping: rende la pizza NonVegetarianPizza." .
+
+:HamTopping rdfs:comment "Sottoclasse di MeatTopping. Rappresenta il prosciutto generico. ParmaHamTopping è una specializzazione diretta." .
+
+:ParmaHamTopping rdfs:comment "Sottoclasse di HamTopping. Prosciutto di Parma DOP, usato in Parmense e altre pizze della tradizione italiana." .
+
+:ChickenTopping rdfs:comment "Sottoclasse di MeatTopping. Pollo come condimento. Usato in PolloAdAstra e Cajun." .
+
+:HotSpicedBeefTopping rdfs:comment "Sottoclasse di MeatTopping. Manzo speziato piccante. Usato in SloppyGiuseppe e AmericanHot." .
+
+:PeperoniSausageTopping rdfs:comment "Sottoclasse di MeatTopping. Salsiccia tipo pepperoni/calabrese. Condimento tipico della pizza Americana." .
+
+:FishTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa i condimenti a base di pesce e frutti di mare. Non appartiene a VegetarianTopping." .
+
+:AnchoviesTopping rdfs:comment "Sottoclasse di FishTopping. Acciughe. Condimento tipico di Napoletana e Siciliana." .
+
+:PrawnsTopping rdfs:comment "Sottoclasse di FishTopping. Gamberetti. Usato in FruttiDiMare e altre pizze di mare." .
+
+:MixedSeafoodTopping rdfs:comment "Sottoclasse di FishTopping. Misto di frutti di mare. Condimento principale di FruttiDiMare." .
+
+:VegetableTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa i condimenti vegetali. PepperTopping, TomatoTopping e OnionTopping sono sottoclassi dirette." .
+
+:PepperTopping rdfs:comment "Sottoclasse di VegetableTopping. Classe astratta per i condimenti a base di peperone. GreenPepperTopping, PeperonataTopping e SweetPepperTopping sono sottoclassi dirette." .
+
+:GreenPepperTopping rdfs:comment "Sottoclasse di PepperTopping. Peperone verde. HotGreenPepperTopping è una specializzazione piccante." .
+
+:HotGreenPepperTopping rdfs:comment "Sottoclasse di GreenPepperTopping. Peperone verde piccante (hasSpiciness Hot). Appartiene a SpicyTopping." .
+
+:JalapenoPepperTopping rdfs:comment "Sottoclasse di PepperTopping. Peperoncino jalapeño (hasSpiciness Hot). Usato in AmericanHot. Appartiene a SpicyTopping." .
+
+:PeperonataTopping rdfs:comment "Sottoclasse di PepperTopping. Peperonata (mix di peperoni). Condimento vegetariano." .
+
+:SweetPepperTopping rdfs:comment "Sottoclasse di PepperTopping. Peperone dolce. Condimento vegetariano." .
+
+:TomatoTopping rdfs:comment "Sottoclasse di VegetableTopping. Classe astratta per i condimenti a base di pomodoro. SlicedTomatoTopping e SundriedTomatoTopping sono sottoclassi dirette." .
+
+:SlicedTomatoTopping rdfs:comment "Sottoclasse di TomatoTopping. Pomodoro a fette fresco." .
+
+:SundriedTomatoTopping rdfs:comment "Sottoclasse di TomatoTopping. Pomodoro secco. Usato in Soho e Veneziana." .
+
+:OnionTopping rdfs:comment "Sottoclasse di VegetableTopping. Classe astratta per i condimenti a base di cipolla. RedOnionTopping è una sottoclasse diretta." .
+
+:RedOnionTopping rdfs:comment "Sottoclasse di OnionTopping. Cipolla rossa. Condimento vegetariano." .
+
+:MushroomTopping rdfs:comment "Sottoclasse di VegetableTopping. Funghi. Condimento tipico di Capricciosa, LaReine e FourSeasons." .
+
+:SpinachTopping rdfs:comment "Sottoclasse di VegetableTopping. Spinaci. Condimento tipico di Fiorentina." .
+
+:ArtichokeTopping rdfs:comment "Sottoclasse di VegetableTopping. Carciofi. Usato in Capricciosa e Giardiniera." .
+
+:AsparagusTopping rdfs:comment "Sottoclasse di VegetableTopping. Asparagi. Condimento vegetariano." .
+
+:CaperTopping rdfs:comment "Sottoclasse di VegetableTopping. Capperi. Tipici di Napoletana e Siciliana." .
+
+:GarlicTopping rdfs:comment "Sottoclasse di VegetableTopping. Aglio. Appartiene a HerbSpiceTopping per alcune definizioni." .
+
+:LeekTopping rdfs:comment "Sottoclasse di VegetableTopping. Porro. Condimento vegetariano." .
+
+:OliveTopping rdfs:comment "Sottoclasse di VegetableTopping. Olive. Usate in Siciliana, Capricciosa e LaReine." .
+
+:PetitPoisTopping rdfs:comment "Sottoclasse di VegetableTopping. Piselli. Condimento vegetariano." .
+
+:RocketTopping rdfs:comment "Sottoclasse di VegetableTopping. Rucola. Usata in Soho e PrinceCarlo." .
+
+:HerbSpiceTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa erbe aromatiche e spezie. CajunSpiceTopping e RosemaryTopping sono sottoclassi dirette." .
+
+:CajunSpiceTopping rdfs:comment "Sottoclasse di HerbSpiceTopping. Miscela di spezie cajun (hasSpiciness Hot). Appartiene a SpicyTopping. Condimento tipico di Cajun." .
+
+:RosemaryTopping rdfs:comment "Sottoclasse di HerbSpiceTopping. Rosmarino. Condimento aromatico vegetariano." .
+
+:SauceTopping rdfs:comment "Sottoclasse di PizzaTopping. Condimenti in forma di salsa. TobascoPepperSauce è l'unica sottoclasse definita." .
+
+:TobascoPepperSauce rdfs:comment "Sottoclasse di SauceTopping. Salsa piccante Tabasco (hasSpiciness Hot). Appartiene a SpicyTopping." .
+
+:FruitTopping rdfs:comment "Sottoclasse di PizzaTopping. Condimenti a base di frutta. Appartiene a VegetarianTopping. SultanaTopping è l'unica sottoclasse definita." .
+
+:SultanaTopping rdfs:comment "Sottoclasse di FruitTopping. Uvetta sultanina. Condimento dolce-salato tipico di Veneziana." .
+
+:NutTopping rdfs:comment "Sottoclasse di PizzaTopping. Condimenti a base di frutta secca. Appartiene a VegetarianTopping. PineKernels è l'unica sottoclasse definita." .
+
+:PineKernels rdfs:comment "Sottoclasse di NutTopping. Pinoli. Condimento tipico di Veneziana e Giardiniera." .
+
+:CheeseTopping rdfs:comment "Sottoclasse di PizzaTopping. Raggruppa tutti i condimenti a base di formaggio. Appartiene a VegetarianTopping." .
+
+:FourCheesesTopping rdfs:comment "Sottoclasse di CheeseTopping. Miscela di quattro formaggi. Condimento tipico di QuattroFormaggi." .
+
+:GoatsCheeseTopping rdfs:comment "Sottoclasse di CheeseTopping. Formaggio di capra. Condimento tipico di Caprina." .
+
+:GorgonzolaTopping rdfs:comment "Sottoclasse di CheeseTopping. Gorgonzola DOP. Condimento tipico di QuattroFormaggi e Soho." .
+
+:MozzarellaTopping rdfs:comment "Sottoclasse di CheeseTopping. Mozzarella. Condimento base di quasi tutte le pizze italiane, inclusa Margherita." .
+
+:ParmesanTopping rdfs:comment "Sottoclasse di CheeseTopping. Parmigiano Reggiano DOP. Usato in Parmense e QuattroFormaggi." .
+
+:VegetarianTopping rdfs:comment "Classe che raggruppa i condimenti privi di carne e pesce. Usata per inferire VegetarianPizza: una pizza è vegetariana se tutti i suoi condimenti appartengono a VegetarianTopping." .
+
+:SpicyTopping rdfs:comment "Classe che raggruppa i condimenti con hasSpiciness Hot. Usata per inferire SpicyPizza tramite ragionamento automatico." .
+
+:Spiciness rdfs:comment "Sottoclasse di ValuePartition. Value partition per il grado di piccantezza. I valori Mild, Medium e Hot sono mutuamente esclusivi ed esaustivi. :hasSpiciness è funzionale." .
+
+:Mild rdfs:comment "Sottoclasse di Spiciness. Condimento non piccante. Valore di default per la maggior parte dei condimenti vegetariani." .
+
+:Medium rdfs:comment "Sottoclasse di Spiciness. Condimento mediamente piccante." .
+
+:Hot rdfs:comment "Sottoclasse di Spiciness. Condimento piccante. I condimenti con questo valore appartengono a SpicyTopping e rendono la pizza SpicyPizza." .
+
+:ValuePartition rdfs:comment "Classe astratta radice per le value partition. Le sottoclassi sono mutuamente esclusive ed esaustive. Spiciness è l'unica value partition definita nell'ontologia." .
+
+:Country rdfs:comment "Sottoclasse di DomainConcept. Rappresenta un paese. Individui definiti: Italy, England, France, Germany, America. Collegata alle pizze tramite :hasCountryOfOrigin." .
+
+:IceCream rdfs:comment "Sottoclasse di Food. Disgiunta da Pizza. Inclusa per illustrare assiomi di disgiunzione tra entità Food non pizza." .
+
+:CheeseyPizza rdfs:comment "Classe definita (senza label di gerarchia esplicita). Pizza che contiene almeno un condimento CheeseTopping. Inferita automaticamente dal reasoner." .
+
+:MeatyPizza rdfs:comment "Classe definita. Pizza che contiene almeno un condimento MeatTopping. Inferita automaticamente dal reasoner." .
+
+:SpicyPizza rdfs:comment "Classe definita. Pizza che contiene almeno un condimento SpicyTopping (hasSpiciness Hot). Inferita automaticamente." .
+
+:SpicyPizzaEquivalent rdfs:comment "Definizione equivalente di SpicyPizza espressa tramite restrizione su SpicyTopping. Usata per validare la coerenza del ragionamento automatico." .
+
+:InterestingPizza rdfs:comment "Classe definita. Pizza con almeno tre condimenti distinti. Inferita automaticamente dal reasoner in base alla cardinalità di :hasTopping." .
+
+:VegetarianPizza rdfs:comment "Classe definita. Pizza i cui condimenti appartengono tutti a VegetarianTopping. Inferita automaticamente; complementare a NonVegetarianPizza." .
+
+:VegetarianPizzaEquivalent1 rdfs:comment "Prima definizione equivalente di VegetarianPizza tramite restrizione universale su VegetarianTopping. Usata per confronto e validazione del ragionamento." .
+
+:VegetarianPizzaEquivalent2 rdfs:comment "Seconda definizione equivalente di VegetarianPizza con assiomi OWL alternativi. Confrontata con VegetarianPizzaEquivalent1 per verificare la consistenza." .
+
+:NonVegetarianPizza rdfs:comment "Classe definita. Pizza che contiene almeno un condimento MeatTopping o FishTopping. Disgiunta da VegetarianPizza." .
+
+:UnclosedPizza rdfs:comment "Sottoclasse di NamedPizza con definizione intenzionalmente incompleta. Illustra il comportamento open-world di OWL: il reasoner non può inferire che sia vegetariana o non vegetariana." .
+
+:hasBase rdfs:comment "Sottoproprietà di :hasIngredient. Proprietà funzionale e inversamente funzionale: ogni pizza ha esattamente una base e ogni base appartiene a esattamente una pizza. Inversa di :isBaseOf." .
+
+:hasTopping rdfs:comment "Sottoproprietà di :hasIngredient. Proprietà inversamente funzionale: un condimento per istanza appartiene a una sola pizza. Inversa di :isToppingOf." .
+
+:hasSpiciness rdfs:comment "Proprietà funzionale: ogni condimento ha al più un valore di piccantezza. Range: Spiciness (Mild, Medium, Hot). Usata per classificare SpicyTopping e inferire SpicyPizza." .
+
+:hasCountryOfOrigin rdfs:comment "Proprietà oggetto che collega una pizza o un ingrediente al paese di origine. Range atteso: istanze di Country (Italy, England, France, Germany, America)." .
+
+:hasIngredient rdfs:comment "Proprietà transitiva. Collega un Food ai suoi componenti Food. Superproprietà di :hasBase e :hasTopping. Inversa di :isIngredientOf." .
+
+:isBaseOf rdfs:comment "Sottoproprietà di :isIngredientOf. Proprietà funzionale e inversamente funzionale. Inversa di :hasBase." .
+
+:isToppingOf rdfs:comment "Sottoproprietà di :isIngredientOf. Proprietà funzionale: un condimento appartiene a una sola pizza per istanza. Inversa di :hasTopping." .
+
+:isIngredientOf rdfs:comment "Proprietà transitiva. Inversa di :hasIngredient. Collega un componente Food all'entità Food di cui fa parte." .
