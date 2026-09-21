@@ -14,11 +14,8 @@ The idea is to increase the context by adding new axioms and capturing the varia
 ## Content
 
 The repository comprises the following resources:
-- [original](original) folder containing the original ontology sources;
-- [pitfalls](pitfalls) folder containing the OOPS! pitfalls for every ontology;
-- [reduced](reduced) containing the reduced versions of the ontologies;
-- [resources](res) containing the result of the model predictions per ontology and model,
-- [src](src) containing the necessary Python scripts to perform the analysis and visualise the results.
+- [onto](onto) folder containing the original ontology sources and the subfolder [priorities](onto/priorities) containing the split according to the three levels of axiom priorities;
+- [resources](res) containing the result of the model predictions per ontology and model.
 
 ## Publications
 - Davide Di Pierro, Danaï Symeonidou, and Lylia Abrouk: _It Never Hurts to Ask: Evaluating LLMs for Ontology Metadata Enrichment._  4th Workshop on Evaluation of Language Models in Knowledge Engineering @ ISWC 2026.
