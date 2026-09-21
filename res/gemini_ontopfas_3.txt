@@ -1,0 +1,82 @@
+77/81
+obo:CHEBI_172406 rdfs:comment "A chemical entity classified as a Polyfluoroalkyl, which is a type of PFAS." .
+obo:CHEBI_83814 rdfs:comment "Any organofluorine compound that is a oligomer or telomer synthesised by telomerization (a chain transfer reaction to produce an oligomer of a limited size). They are generally used in fire-fighting foams, leather protectants, food packaging and stain resistants." .
+obo:ExO_0000043 rdfs:comment "A class representing the structural organization of an organism or any of its parts." .
+obo:ExO_0000076 rdfs:comment "A class representing the quantity of a substance administered or absorbed by an organism." .
+obo:ExO_0000079 rdfs:comment "A class representing a disorder of structure or function in a human, animal, or plant, especially one that produces specific signs or symptoms or that affects a specific location and is not simply a direct result of physical injury." .
+obo:ExO_0000080 rdfs:comment "A class representing a physical or mental feature that is regarded as indicating a condition of disease, particularly a feature that is apparent to the patient." .
+obo:ExO_0000087 rdfs:comment "A class representing any action or process intended to modify or reduce exposure to a substance or agent." .
+obo:IAO_0000114 rdfs:comment "An annotation property used to describe the curation status of an entity." .
+obo:IAO_0000115 rdfs:comment "An annotation property used to provide a definition for an entity." .
+dcterms:accessRights rdfs:comment "Information about who can access the resource or an indication of its security status." .
+dcterms:bibliographicCitation rdfs:comment "A bibliographic reference for the resource." .
+dcterms:contributor rdfs:comment "An entity responsible for making contributions to the resource." .
+dcterms:creator rdfs:comment "An entity primarily responsible for making the resource." .
+dcterms:issued rdfs:comment "Date of formal issuance (e.g., publication) of the resource." .
+dcterms:license rdfs:comment "A legal document giving official permission to do something with the resource." .
+dcterms:rights rdfs:comment "Information about rights held in and over the resource." .
+dcterms:title rdfs:comment "A name given to the resource." .
+pav:version rdfs:comment "The version of the entity." .
+vann:preferredNamespacePrefix rdfs:comment "The preferred prefix for the namespace URI of an ontology." .
+vann:preferredNamespaceUri rdfs:comment "The preferred namespace URI of an ontology." .
+swrla:isRuleEnabled rdfs:comment "A property to indicate whether a SWRL rule is enabled or disabled." .
+oboInOwl:created_by rdfs:comment "Indicates the entity that created an annotation or ontology component." .
+oboInOwl:creation_date rdfs:comment "The date on which the annotation or ontology component was created." .
+oboInOwl:hasDbXref rdfs:comment "A cross-reference to an external database or resource." .
+oboInOwl:hasExactSynonym rdfs:comment "An alternative term that is an exact synonym of the primary label." .
+oboInOwl:hasOBONamespace rdfs:comment "Indicates the OBO namespace to which an entity belongs." .
+oboInOwl:hasRelatedSynonym rdfs:comment "An alternative term that is a related synonym of the primary label." .
+oboInOwl:id rdfs:comment "The identifier of the entity within the OBO ontology." .
+oboInOwl:inSubset rdfs:comment "Indicates that an entity belongs to a particular subset of the ontology." .
+skos:altLabel rdfs:comment "An alternative lexical label for a resource." .
+skos:changeNote rdfs:comment "A note about a change made to a concept." .
+skos:definition rdfs:comment "A statement or formal explanation of the meaning of a concept." .
+skos:editorialNote rdfs:comment "A note for the ontology editor about a concept." .
+skos:example rdfs:comment "An example of the use or meaning of a concept." .
+skos:notation rdfs:comment "A notation, i.e. a string or symbol, in an established notation system by which a concept is identified." .
+skos:scopeNote rdfs:comment "A note that helps to clarify the meaning and/or scope of a concept." .
+odrl:hasPolicy rdfs:comment "Links an entity to an ODRL policy that applies to it." .
+prov:wasGeneratedBy rdfs:comment "The activity that generated the entity." .
+schema:City rdfs:comment "A city or town." .
+schema:Continent rdfs:comment "One of the continents (for example, Europe or Africa)." .
+schema:dateCreated rdfs:comment "The date on which the CreativeWork was created or published." .
+schema:description rdfs:comment "A description of the item." .
+schema:domainIncludes rdfs:comment "Relates a property to a class that is its domain." .
+schema:license rdfs:comment "An entity that describes a license for the content of an entity." .
+schema:publisher rdfs:comment "The publisher of the creative work." .
+ontopfas:Pfoa rdfs:comment "PFOA is a specific PFCA with the formula C₇F₁₅COOH (eight carbon atoms)." .
+ontopfas:Pfos rdfs:comment "PFOS is a specific PFSA with the formula C₈F₁₇SO₃H." .
+ontopfas:PolymerPfas rdfs:comment "A polymer is a substance composed of big molecules form long chains or networks." .
+ontopfas:UltraShortChainPfas rdfs:comment "PFAS chains with a maximum of 3 atoms of carbon." .
+ontopfas:VulnerablePerson rdfs:comment "Fragile people who can suffer more from the exposure to PFAS." .
+ontopfas:restrictedBy rdfs:comment "Inverse of 'restricts'. Indicates that a PFAS is subject to restrictions by a specific regulation." .
+ontopfas:validInPlace rdfs:comment "Relation identifying the validity of a guideline in a place." .
+mod:status rdfs:comment "A property to indicate the status of an entity, e.g., 'accepted', 'pending', 'deprecated'." .
+<urn:absolute:ontopfas#Presumptive> rdfs:comment "Presumptive PFAS observation." .
+obo:CHEBI_24531 rdfs:comment "A chemical entity that is a subclass of PFAS, characterized by a fully fluorinated alkyl chain." .
+obo:ExO_0000101 rdfs:comment "A class representing the observable characteristics or traits of an organism, resulting from the interaction of its genotype with the environment." .
+obo:PCO_0000031 rdfs:comment "A class representing any entity that is part of or constitutes an organism." .
+schema:Product rdfs:comment "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online." .
+ontopfas:NonPolymerPfas rdfs:comment "A non-polymer is a substance composed of small molecules that do not form long chains or networks. These molecules are typically of uniform composition and have a relatively simple and well-defined structure." .
+ontopfas:PfasPrecursor rdfs:comment "Precursor PFAS are compounds that can transform — through biological, chemical, or environmental processes — into perfluoroalkyl acids (PFAAs) such as PFOA or PFOS." .
+ontopfas:Pfca rdfs:comment "PFCAs are PFAAs that end with a carboxylic acid functional group (-COOH). Their general formula is CₙF₂ₙ₊₁COOH, where n is typically between 4 and 14." .
+ontopfas:Pfsa rdfs:comment "PFSAs are PFAAs that end with a sulfonic acid functional group (-SO₃H). Their general formula is CₙF₂ₙ₊₁SO₃H." .
+ontopfas:ShortChainPfas rdfs:comment "PFCA with fewer than 8 atoms of carbon or PFSA with fewer than 6 atoms of carbon." .
+obo:ExO_0000003 rdfs:comment "A class representing the result or consequence of an exposure event." .
+obo:ExO_0000077 rdfs:comment "A class representing any reaction of a biological system to a stimulus or change." .
+dcat:Dataset rdfs:comment "A collection of data, published or curated by a single source, and available for access or download in one or more representations." .
+ontopfas:FunctionalGroup rdfs:comment "Functional group of the PFAS, responsible for the reactive part." .
+obo:ExO_0000022 rdfs:comment "A class representing an agent, activity, or event that causes an exposure event." .
+ontopfas:PfasMobility rdfs:comment "Degree of mobility associated with the PFAS." .
+schema:Person rdfs:comment "A person (alive, dead, undead, or fictional)." .
+<https://w3id.org/ocqa/regulation#Regulation> rdfs:comment "Regulation about the presence of the PFAS in the environments." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdfs:comment "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes." .
+obo:ENVO_01000408 rdfs:comment "A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein." .
+schema:Organization rdfs:comment "An organization such as a school, NGO, corporation, club, etc." .
+sosa:Observation rdfs:comment "Activity of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with." .
+schema:Place rdfs:comment "Physical place (city, region, country, continent)." .
+ontopfas:Pfas rdfs:comment "Per- and poly- fluoroalkyl substance." .
+obo:BFO_0000051 rdfs:comment "A core relation that holds between a part and its whole." .
+ontopfas:LongChainPfas rdfs:comment "PFCA with more than 7 atoms of carbon or PFSA with more than 5 atoms of carbon." .
+ontopfas:Pfaa rdfs:comment "Perfluoroalkyl acids (PFAAs) are a subclass of PFAS that have a fully fluorinated carbon chain (no hydrogen atoms attached to the carbon backbone) ending with a functional acid group — either a carboxylic acid (-COOH) or a sulfonic acid (-SO₃H) group." .
+obo:CHEBI_24431 rdfs:comment "A class representing any chemical substance or molecular entity." .
